@@ -1,14 +1,20 @@
 def average_lists(list1, list2):
+    """
+    this function takes two lists and returns the average of them
+    :param list1: list of numbers
+    :param list2: list of numbers
+    :return: average of list1 and list2
+    """
     sum = 0
     for number in list2:
         list1.append(number)
     for number in list1:
         sum += number
     average = sum / len(list1)
-    print(f"the average is: {average}")
+    return average
 
 def main():
-    average_lists([60, 30], [30, 20])
+    print(f"the average is: {average_lists([60, 30], [30, 20])}")
 
 if __name__ == '__main__':
         main()
