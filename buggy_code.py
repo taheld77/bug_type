@@ -6,8 +6,7 @@ def average_lists(list1, list2):
     :return: average of list1 and list2
     """
     sum = 0
-    for number in list2:
-        list1.append(number)
+    list1.extend(list2)
     for number in list1:
         sum += number
     average = sum / len(list1)
